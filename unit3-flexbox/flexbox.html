@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container,.container2{
+            display: flex;
+            order: 0;
+        }
+        .container2 .block{
+            padding: 3em;
+        }
+        .block{
+            border: 1px solid red;
+            margin: 0.5em;
+            padding: 1em;
+            
+        }
+        .grow{
+            /* se expande totalmente detreminado fragmento */
+            flex-grow: 1;
+        }
+
+        .grow2{
+            flex-grow: 2;
+        }
+
+        .shrink{
+            /* se acompla (se vuelve mas pequeño) el doble */
+            flex-shrink: 2;
+        }
+        .order{
+            /* mover desde acutual hasta final es como una distancia */
+            order: -3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">Yecksin</div>
+        <div class="block ">Mauricio</div>
+        <div class="block">Zuñiga</div>
+        <div class="block">Guerrero</div>
+        <div class="block order">Zeus</div>
+        <div class="block ">Merengues</div>
+    </div>
+
+    <div class="container2">
+        <div class="block">Yecksin Lorem, ipsum dolor.</div>
+        <div class="block ">Mauricio Lorem, ipsum dolor.</div>
+        <!-- /* se acompla (se vuelve mas pequeño) el doble */ -->
+        <div class="block shrink">Zuñiga Lorem, ipsum dolor.</div>
+        <div class="block">Guerrero Lorem, ipsum dolor.</div>
+        <div class="block">Zeus Lorem, ipsum dolor.</div>
+        <div class="block">Merengues Lorem, ipsum dolor.</div>
+        
+    </div>
+
+    <div class="container">
+        <div class="block">Yecksin</div>
+        <div class="block grow">Mauricio</div>
+        <div class="block">Zuñiga</div>
+        <div class="block grow2">Guerrero</div>
+        <div class="block">Zeus</div>
+        <div class="block">Merengues</div>
+    </div>
+
+    <div class="container">
+        <div class="block grow">Yecksin</div>
+        <div class="block grow">Mauricio</div>
+        <div class="block grow">Zuñiga</div>
+        <div class="block grow">Guerrero</div>
+        <div class="block grow">Zeus</div>
+        <div class="block grow">Merengues</div>
+    </div>
+
+    <hr>
+
+    <div class="container" style="justify-content: space-between;">
+        <div class="block">Yecksin</div>
+        <div class="block ">Mauricio</div>
+        <div class="block">Zuñiga</div>
+        <div class="block">Guerrero</div>
+        <div class="block order">Zeus</div>
+        <div class="block ">Merengues</div>
+    </div>
+
+    <div class="container" style="justify-content: space-around;">
+        <div class="block">Yecksin</div>
+        <div class="block ">Mauricio</div>
+        <div class="block">Zuñiga</div>
+        <div class="block">Guerrero</div>
+        <div class="block order">Zeus</div>
+        <div class="block ">Merengues</div>
+    </div>
+
+</body>
+</html>
