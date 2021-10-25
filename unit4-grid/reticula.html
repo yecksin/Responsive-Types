@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            padding: 1em;
+            display: grid;
+            grid-template-columns: 1fr 25% 1fr 25%;
+            grid-template-columns: repeat(3, 1fr) 100px;
+            grid-template-rows: 100px 1fr 1fr;
+            /* si es row cambia que crea automatico es por columnas */
+            grid-auto-flow: row;
+            /* valor predeterminado de todas las columnas */
+            grid-auto-columns: 50px;
+            /* valor predeterminado de todas las filas */
+            grid-auto-rows: 1fr;
+            /* es igual a lo de abajo */
+            /* grid-template: 1fr 25% 1fr 25% / 100px 1fr 1fr 1fr; */
+            grid-gap: 10px;
+        }
+        .elemento{
+            background-color: bisque;
+            padding: 1em;
+            /* margin: 1px; */
+            border-radius: 10px;
+            text-align: center;
+            color: green;
+            font-family: fantasy;
+            font-weight: 500;
+            font-style: italic;
+            font-size: 1.2em;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="elemento elm1">1</div>
+        <div class="elemento elm2">2</div>
+        <div class="elemento elm3">3</div>
+        <div class="elemento elm4">4</div>
+        <div class="elemento elm5">5</div>
+        <div class="elemento elm6">6</div>
+        <div class="elemento elm7">7</div>
+        <div class="elemento elm8">8</div>
+        <div class="elemento elm9">9</div>
+        <div class="elemento elm10">10</div>
+        <div class="elemento elm11">11</div>
+        <div class="elemento elm12">12</div>
+        <div class="elemento elm13">13</div>
+        <div class="elemento elm14">14</div>
+        <div class="elemento elm15">15</div>
+        <div class="elemento elm16">16</div>
+        <div class="elemento elm17">17</div>
+        <div class="elemento elm18">18</div>
+        <div class="elemento elm19">19</div>
+        <div class="elemento elm20">20</div>
+        <div class="elemento elm21">21</div>
+        <div class="elemento elm22">22</div>
+        <div class="elemento elm23">23</div>
+        <div class="elemento elm24">24</div>
+    </div>
+</body>
+</html>
