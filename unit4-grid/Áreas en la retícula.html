@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            padding: 3em;
+            display: grid;
+            grid-template: repeat(5,1fr) / repeat(4, 1fr);
+            grid-template-areas: "header header header header"
+                                 "contenido contenido contenido sidebar"
+                                 "contenido contenido contenido sidebar"
+                                 ". . . sidebar"
+                                 "footer footer footer footer"                                    ;
+                                 grid-gap: 20px;
+        }
+        .element{
+            background-color: antiquewhite;
+        }
+        .el1{
+            grid-area: header;
+            background-color: rgb(90, 199, 181);
+        }
+        .el2{
+            grid-area: contenido;
+            background-color: rgb(199, 164, 90);
+        }
+        .el3{
+            grid-area: sidebar;
+            background-color: rgb(199, 94, 90);
+        }
+        .el4{
+            grid-area: footer;
+            background-color: rgb(119, 90, 199);
+        }
+        @media (max-width: 600px) {
+            .contenedor{
+                grid-template-areas: "header header header header"
+                                 "contenido contenido contenido contenido"
+                                 "contenido contenido contenido contenido"
+                                 "contenido contenido contenido contenido"
+                                 "sidebar sidebar sidebar sidebar" 
+                                 "footer footer footer footer"  
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+
+            <div class="element el1">1</div>
+            <div class="element el2">2</div>
+            <div class="element el3">3</div>
+            <div class="element el4">3</div>
+            <div class="element">A</div>
+            <div class="element">B</div>
+            <div class="element">C</div>
+    </div>
+    
+</body>
+</html>

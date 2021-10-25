@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 20px;
+            justify-items: center;
+            align-items: center;
+        }
+        .element{
+            border: 3px solid gray;
+            display: flex;
+
+            font-family: fantasy;
+            font-weight: 500;
+            font-size: 2em;
+            color: darkgrey;
+            height: 100px;
+        }
+        .el3{
+            justify-self: end;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="element el1">1</div>
+        <div class="element el2">2</div>
+        <div class="element el3">3</div>
+        <div class="element">4</div>
+        <div class="element">5</div>
+        <div class="element">6</div>
+        <div class="element">7</div>
+        <div class="element el8">8</div>
+        <div class="element">9</div>
+    </div>
+    
+</body>
+</html>
